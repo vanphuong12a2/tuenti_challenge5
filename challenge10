@@ -1,0 +1,7 @@
+The explanation of how I solved it:
+  1. View the cookies to get the config value 
+  2. Create a database with a table contain my login data
+  3. Change the cookies:
+    + config: the database authentication infomation is my database's information
+    + sig: encode from secret ('x') and my new config value
+  4. Log in with the user data from my database
